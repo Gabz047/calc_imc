@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calcule seu IMC</title>
+</head>
+
+<body>
+    <main>
+        <section class="desc-container">
+            <div class="overlay"></div>
+            <div class="img-bomba">
+                <img src="workout-2928389_1920.jpg" alt="">
+            </div>
+            <div class="box-desc">
+                <h1>O que é IMC?</h1>
+                <p>O IMC, ou Índice de Massa Corporal, é um cálculo simples que permite avaliar se a pessoa está dentro
+                    do peso que é considerado ideal para a sua altura.
+                    O IMC é uma fórmula utilizada por vários profissionais de saúde, incluindo médicos, nutricionistas,
+                    profissionais de educação física e enfermeiros, para saber, de uma forma rápida, se a pessoa está
+                    com o peso adequado ou se precisa ganhar ou perder peso.</p>
+
+                <table>
+                    <tr>
+                        <th>IMC</th>
+                        <th>Classificação</th>
+                    </tr>
+                    <tr>
+                        <td> > 18,5 </td>
+                        <td>Abaixo do peso</td>
+                    </tr>
+                    <tr>
+                        <td> 18,5 - 24,9 </td>
+                        <td>Peso Normal</td>
+                    </tr>
+                    <tr>
+                        <td> 24,9 - 29,9 </td>
+                        <td>Sobrepeso</td>
+                    </tr>
+                    <tr>
+                        <td> 30 - 34,9 </td>
+                        <td>Obesidade Grau I</td>
+                    </tr>
+                    <tr>
+                        <td> 35 - 39,9 </td>
+                        <td>Obesidade Grau II </td>
+                    </tr>
+                    <tr>
+                        <td> >= 40 </td>
+                        <td> Obesidade Mórbida </td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section class="calculadora-container">
+            <div class="calc-box">
+                <h2>Calculadora - IMC</h2>
+                <div class="containerbtn">
+                    <div class="pesobox">
+                        <label for="pesodigita">
+                            <p>Peso:</p>
+                        </label>
+                        <input type="number" id="pesodigita" placeholder="Informe o peso em Kg">
+                    </div>
+                    <div class="alturabox">
+                        <label for="alturadigita">
+                            <p>Altura:</p>
+                        </label>
+                        <input type="number" id="alturadigita" placeholder="Informe em Metros">
+                    </div>
+                </div>
+                <div class="calcular">
+                    <button id="btn-calc" onclick="calcular()"">
+                        <p>Calcular</p>
+                    </button>
+                    <button id="btn-limpar" onclick="limpar()">
+                        <p>Limpar</p>
+                    </button>
+                </div>
+                <div id="resultado-box">
+                    <p>Seu IMC é:</p>
+                    <input type="number" id="imc" disabled>
+                </div>
+                <div id="classificacao-show">
+                    <input type="text" id="classi-show" disabled>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js.js"></script>
+</body>
+
+</html>

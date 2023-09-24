@@ -1,0 +1,252 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+main {
+    width: 100%;
+    height: auto;
+}
+
+.desc-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0);
+    z-index: 99999999;
+}
+
+.img-bomba {
+    width: 50%;
+    height: 100vh;
+}
+
+.img-bomba img {
+    width: 100%;
+    height: 100%;
+}
+
+.box-desc {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 9999;
+    justify-content: center;
+    background-color: rgb(20, 20, 20);
+}
+
+.box-desc h1 {
+    margin: 5vh auto 0;
+    font-size: 50px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+.box-desc p{
+    margin: 5vh auto 0;
+    padding: 5vh;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+.overlay {
+    position: absolute;
+    background: linear-gradient(to left, rgb(20, 20, 20) 15%, transparent);
+    width: 50%;
+    height: 100%;
+    z-index: 999999999999;
+}
+
+table {
+    width: 90%;
+    height: 40vh;
+    margin: 4vh auto 0;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+td, tr {
+   border: 2px solid rgb(12, 12, 12);
+   background-color: rgb(236, 236, 236);
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-size: 20px;
+}
+
+td {
+    color: rgb(0, 0, 0);
+    font-weight:500;
+}
+
+th {
+    border: 2px solid rgb(12, 12, 12);
+    background-color: rgb(130, 235, 130);
+    font-size: 20px;
+}
+
+.calculadora-container {
+    width: 100%;
+    height: 100vh;
+    background-image: url('orion-nebula-11107_1920.jpg');
+    display: flex;
+    justify-content: center;
+}
+
+.calculadora-container .calc-box {
+    width: 40%;
+    height: 90%;
+    margin: 6vh auto 0;
+    position: absolute;
+    background-color: rgb(32, 32, 32);
+    border-radius: 20px;
+    border: 2px solid;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0);
+}
+
+.calc-box h2 {
+    text-align: center;
+    padding: 5vh;
+    font-size: 50px;
+    color: aliceblue;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.pesobox {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: auto;
+}
+
+.alturabox {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: auto;
+}
+
+.containerbtn {
+    width: 96%;
+    height: 20vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+#pesodigita {
+    height: 50px;
+}
+
+#alturadigita {
+    height: 50px;
+}
+
+input {
+    font-size: 20px;
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+label p {
+    font-size: 40px;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.calcular {
+    margin: 0 auto;
+    width: 70%;
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+#btn-calc {
+    width: 45%;
+    height: 100%;
+    background-color: rgb(248, 65, 65);
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+#btn-calc p {
+    font-size: 3vh;
+    color: rgb(255, 255, 255);
+}
+
+#btn-calc:active {
+    background-color: rgb(255, 99, 99);
+}
+
+#btn-limpar {
+    width: 45%;
+    height: 100%;
+    background-color: rgb(248, 65, 65);
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+#btn-limpar p {
+    font-size: 3vh;
+    color: rgb(255, 255, 255);
+}
+
+#btn-limpar:active {
+    background-color: rgb(255, 99, 99);
+}
+
+#resultado-box {
+    width: 80%;
+    height: 5vh;
+    background-color: rgb(105, 105, 105);
+    display: flex;
+    align-items: center;
+    margin: 5vh auto 0;
+}
+
+#resultado-box p {
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 10px;
+    color: rgb(255, 255, 255);
+}
+
+#resultado-box #imc {
+    margin-left: 10px;
+    width: 10vh;
+    background-color: rgb(61, 61, 61);
+    color: white;
+}
+
+#classificacao-show {
+     width: 80%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2vh auto 0;
+}
+
+#classificacao-show #classi-show {
+    font-size: 40px;
+    color: white;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(105, 105, 105);;
+    border: none;
+}
+
+#classi-show {
+    text-align: center;
+}
+
